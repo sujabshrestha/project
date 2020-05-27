@@ -1,0 +1,29 @@
+.carousel{
+    margin-top: 2px;
+}
+
+.carousel-item img{
+    height:550px;
+    width:100%;
+}
+
+.carousel-control-next-icon,.carousel-control-prev-icon{
+    height: 40px;
+    width: 40px;
+}
+.underline{
+    
+    width: 150px;
+    height: 2px;
+    background-color: aquamarine;
+}
+
+.media img{
+    max-width: 120px;
+    height:auto ;
+}
+.underline-green{
+    width: 150px;
+    height: 2px;
+    background-color: aquamarine;
+}
