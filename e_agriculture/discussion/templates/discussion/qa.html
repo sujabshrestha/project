@@ -1,0 +1,10 @@
+{% extends 'products/base.html' %}
+
+{% block content %}
+    {% for Question in Questions %}
+       <div class="content mt-5">
+        <a href="#">{{ Question.question_title }}</a>
+        <h1>{{ Question.question_text }}</h1>
+       </div>
+    {% endfor %}
+{% endblock %}

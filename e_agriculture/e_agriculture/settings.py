@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'discussion.apps.DiscussionConfig',
     'products.apps.ProductsConfig',
     'seller.apps.SellerConfig',
     'crispy_forms',
