@@ -3,9 +3,9 @@
 {% block content %}
     {% for product in products %}
     
-    <div class="col-md-3 mt-3 ml-4" style="float:left;">
+    <div class="col-md-3 mt-3 ml-5" style="float:left;">
           
-            <div class="card" style="width: 18rem;">
+            <div class="card" style="width: 15rem;">
             <img class="card-img-top" src="{{ product.image.url }}" alt="Card image cap">
             <div class="card-body">
                 <a href="{% url 'detail' product.id %}"><h5 class="card-title">{{ product.title }}</h5></a>
