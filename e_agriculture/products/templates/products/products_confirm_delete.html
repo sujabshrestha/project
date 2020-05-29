@@ -1,0 +1,24 @@
+{% extends 'products/base.html ' %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="content-section mt-3">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">
+                    Delete post
+                    <h2>Are you sure "{{ object.title }}"</h2>
+                </legend>
+                
+
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-success" type="submit"> Yes,Delete</button>
+                <a class="btn btn-outline-secondary" href="{% url 'detail' object.id %}" type="submit">Cancel</a>
+                
+            
+            </div>
+            
+        </form>
+    </div>
+{% endblock %}

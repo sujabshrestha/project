@@ -16,14 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path,include
 from seller import views as seller_views
-from d_forum import views as d_views
+# from d_forum import views as d_views
 from django.contrib.auth import views as auth_views
 from django.conf import settings
 from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('products.urls')),
-    path('qa/', include('d_forum.urls')),
+    # path('', include('d_forum.urls')),
     path('register/', seller_views.register, name='register'),
     path('login/', auth_views.LoginView.as_view(template_name= 'seller/login.html'),name='login'),
     path('logout/', auth_views.LogoutView.as_view(template_name= 'seller/logout.html'),name='logout'),
